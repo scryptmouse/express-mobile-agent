@@ -10,7 +10,6 @@
     "test": "vows --spec"
   },
   "dependencies": {
-    "underscore": "~1.4.x",
     "mobile-agent": "0.0.8"
   },
   "devDependencies": {
