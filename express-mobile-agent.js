@@ -12,8 +12,11 @@ function ExpressMobileAgent(agent) {
   // Attach original mobile-agent object so it
   // will still be accessible if needed
   this['mobile-agent'] = agent;
-
-  this.mobile = agent.Mobile;
+  if(!agent || agent === undefined) {
+    this.mobile = null;
+  } else {
+    this.mobile = agent.Mobile;
+  }
 }
 
 // Add a shortcut for a 'mobile' vs 'not-mobile'
